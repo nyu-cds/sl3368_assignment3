@@ -1,6 +1,11 @@
 """
     N-body simulation.
 
+    Author: Shixin Li
+    Date: 02/11/2017
+    NetID: sl3368
+
+
     Runtime = 25.1116509438s
 
     R = 85.08023528801277s / 25.1116509438s = 3.3881
