@@ -89,9 +89,15 @@ def offset_momentum(ref, BODIES, px=0.0, py=0.0, pz=0.0):
         pz -= vz * m
         
     (r, v, m) = ref
-    v[0] = px / m
-    v[1] = py / m
-    v[2] = pz / m
+
+    try:
+
+        v[0] = px / m
+        v[1] = py / m
+        v[2] = pz / m
+
+    except ValueError:
+        print ('Oops! Invalid m')
 
 
 def nbody(loops, reference, iterations, BODIES):
