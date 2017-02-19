@@ -12,6 +12,7 @@
 """
 
 import itertools
+import timeit
 
 PI = 3.14159265358979323
 SOLAR_MASS = 4 * PI * PI
@@ -153,7 +154,5 @@ if __name__ == '__main__':
     #nbody(100, 'sun', 20000)
 
     # find runtime
-    import timeit
-
     print (timeit.timeit("nbody(100, 'sun', 20000)", setup='from __main__ import nbody', number=1))
 
