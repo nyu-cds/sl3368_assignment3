@@ -31,7 +31,7 @@ def zbits(n, k):
 
 
 '''
-	The program is correct aftering running the following tests.
+	The program is correct after running the following tests.
 
 '''
 #assert zbits(4, 3) == {'0100', '0001', '0010', '1000'}
