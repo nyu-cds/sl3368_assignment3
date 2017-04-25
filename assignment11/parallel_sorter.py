@@ -21,7 +21,7 @@ if size < 1:
 def generate_dataset():
 	while True:
 		print ('Please enter the number of elements in the dataset (a large integer around 10000): ')
-		num_elements = raw_input()
+		num_elements = input()
 		## Check if input is an integer.
 		try:
 			num_elements = int(num_elements)
@@ -71,7 +71,7 @@ def parallel_sort():
 	if rank == 0:
 		sorted_dataset = np.concatenate(data_to_gather)
 		print ('\nFinal sorted dataset is:')
-		print sorted_dataset
+		print (sorted_dataset)
 
 
 if __name__ == '__main__':
